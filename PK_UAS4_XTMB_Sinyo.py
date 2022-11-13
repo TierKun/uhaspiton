@@ -1,7 +1,7 @@
 import sys
-import base64
+#import base64
 
-exitmsg = 'LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KVGhhbmtzIEZvciBVc2UgVGhpcyBUb29scwpCeSA6IEB0aWVya3Vubl8gKFRpZXIgU2lueW8pCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0='
+#exitmsg = 'LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KVGhhbmtzIEZvciBVc2UgVGhpcyBUb29scwpCeSA6IEB0aWVya3Vubl8gKFRpZXIgU2lueW8pCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0='
 
 def main_menu():
     print('program menghitung Body Mass Index\n1. BMI\n2. Exit')
@@ -43,10 +43,10 @@ def tanyain():
         tanyain()
         
 def exit():
-    base64_bytes = exitmsg.encode("ascii") #encode base64 (anti recode exit message:v)
-    string_bytes = base64.b64decode(base64_bytes)
-    encode_exit = string_bytes.decode("ascii")
-    sys.exit(encode_exit)
+    #base64_bytes = exitmsg.encode("ascii") #encode base64 (anti recode exit message:v)
+    #string_bytes = base64.b64decode(base64_bytes)
+    #encode_exit = string_bytes.decode("ascii")
+    sys.exit('bye bye')
     
 if __name__=='__main__':
     main_menu()    
